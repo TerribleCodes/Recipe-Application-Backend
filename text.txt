@@ -1,5 +1,0 @@
-cd client
-yarn create react-app
-
-cd server
-yarn init
