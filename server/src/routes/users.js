@@ -5,8 +5,10 @@ import { userModel } from "../models/users.js";
 
 const router = express.Router();
 
+// Register
 router.post("/register", async (req, res) => {
   const { username, password } = req.body;
+
   const user = await userModel.findOne({ username });
 
   if (user) {
@@ -21,9 +23,12 @@ router.post("/register", async (req, res) => {
   res.json({ message: "Successful" });
 });
 
+// Login
 router.post("/login", async (req, res) => {
   const { username, password } = req.body;
+
   const user = await userModel.findOne({ username });
+
   if (!user) {
     return res.json({ message: "user does't exist" });
   }
