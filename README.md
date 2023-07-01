@@ -1,107 +1,70 @@
 <h1 align="center">
- RECIPE APPLICATION
+ RECIPE APPLICATION BACKEND
 </h1>
 <p align="center">
-MongoDB, ExpressJS, ReactJS & NodeJS
+MongoDB, ExpressJS & NodeJS
 </p>
 <p align="center">
 :octocat:
 </p>
 
-> Brief introduction about the application and its capabilities.
-
 ## Clone the repository
 
 ```terminal
-$ git clone
+$ git clone https://github.com/TerribleCodes/Recipe-Application
 ```
 
 ## Project structure
 
-      CHAT_APP_WITH_CHATGPT_API
-      ├── client
-      │   ├── node_modules
-      │   ├── public
-      │   └── src
-      │       ├── assets
-      │       ├── components
-      │       │   ├──
-      │       │   └──
-      │       └──
-      ├── misc
+      RECIPE_APPLICATION_BACKEND
       └── server
-         │   ├── node_modules
-         └── └── routes
+          └── src
+               ├── models
+               └── routes
 
-# Usage (run fullstack app on your machine)
+# Usage (run backend on your machine)
 
 ## Prerequisites
 
 - [NodeJS](https://nodejs.org/en/download/)
 - [npm](https://nodejs.org/en/download/package-manager/)
 
-_Notice, you need client and server runs concurrently in different terminal session, in order to make them talk to each other_
-
-## Client-side usage
-
-### Client-side environmental variables
-
-| Name | Description | Default Value |
-| ---- | ----------- | ------------- |
-| PORT | Port Number | 1337          |
-
-### Run the server side
-
-```terminal
-$ cd client          // go to client folder
-$ npm i    // npm install packages
-$ npm run dev        // run it locally
-```
-
 ## Server-side usage
 
 ### Server-side environmental variables
 
-| Name | Description | Default Value |
-| ---- | ----------- | ------------- |
-| PORT | Port Number | 1337          |
+| Name        | Description            | Default Value |
+| ----------- | ---------------------- | ------------- |
+| PORT        | Port Number            | 1337          |
+| MONGODB_URI | MongoDB Connection URL | -             |
 
-### Run the client side
+### Run the server side
 
 ```terminal
-$ cd server   // go to server folder
-$ npm i       // npm install packages
-$ npm run dev // run it locally
+$ cd server          // go to client folder
+$ npm i              // npm install packages
+$ npm run start      // run it locally
 ```
 
 # Dependencies (tech-stacks)
 
-| Client-side        | Server-side          |
-| ------------------ | -------------------- |
-| react: ^18.2.0     | axios: ^1.3.4        |
-| react-dom: ^18.2.0 | body-parser: ^1.20.2 |
-|                    | cors: ^2.8.5         |
-|                    | dotenv: ^16.0.3      |
-|                    | express: ^4.18.2     |
-|                    | helmet: ^6.0.1       |
-|                    | morgan: ^1.10.0      |
-
-# Screenshots of this project
-
-UI 1
-![]()
-
-UI 2
-![]()
+| Server-side          |
+| -------------------- |
+| bcrypt: ^5.1.0       |
+| cors: ^2.8.5         |
+| dotenv: ^16.0.3      |
+| express: ^4.18.2     |
+| jsonwebtoken: ^9.0.0 |
+| mongoose: ^7.2.1     |
 
 ## Bugs or comments
 
-[Create new Issues]()
+[Create new Issues](https://github.com/TerribleCodes/Recipe-Application/issues)
 
 ---
 
 <p align="right">
-   <a href="#">
+   <a href="https://www.youtube.com/watch?v=P43DW3HUUH8">
      <i>This project was based on the tutorial by </i>
    </a>
 </p>
